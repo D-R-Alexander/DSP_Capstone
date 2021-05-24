@@ -65,8 +65,6 @@ edx %>% separate_rows(genres, sep = "\\|") %>%
   geom_histogram(bins = 30, color = "black") +
   scale_x_log10() +
   ggtitle("Number of Ratings per Genre")
-# Result: Two genres received significantly fewer ratings than the others.
-# The majority received 100K or more ratings with 7 of 20 over 1M.
 
 # Explore if positive or negative bias by genre
 genre_bias_avg <- edx %>% 
@@ -78,7 +76,6 @@ genre_bias_avg %>%
   ggplot(aes(g_bias)) +
   geom_histogram(bins = 30, color = "black") + 
   ggtitle("Bias of Ratings by Genre")
-# Result: More genres ~14 of the 20 received ratings higher than the average
 
 # Learned in Pt. 1 that some some ratings were more common than others
 # Explore distribution of ratings
@@ -88,7 +85,6 @@ edx %>%
   geom_histogram(bins = 20, color = "black") +
   scale_x_log10() +
   ggtitle("Distribution of Ratings")
-# Result: Majority of ratings are over 3.0
 
 # Explore distribution - quantity of ratings per movie
 edx %>% 
@@ -97,7 +93,6 @@ edx %>%
   geom_histogram(bins = 30, color = "black") +
   scale_x_log10() +
   ggtitle("Number of Ratings per Movie")
-# Result: Majority of movies received between 50-500 ratings
 
 # Explore distribution - quantity of ratings per user
 edx %>% count(userId) %>% 
@@ -105,7 +100,6 @@ edx %>% count(userId) %>%
   geom_histogram(bins = 30, color = "black") + 
   scale_x_log10() + 
   ggtitle("Number of Ratings per User")
-# Result: Most raters submitted 100 or fewer ratings.
 
 # Explore rater tendencies
 rater_bias_avg <- edx %>% 
@@ -115,7 +109,6 @@ rater_bias_avg %>%
   ggplot(aes(r_bias)) +
   geom_histogram(bins = 30, color = "black") +
   ggtitle("Rater Tendencies")
-# Result: Skewed toward more positive ratings
 
 # Explore if certain movies are rated differently than others
 movie_bias_avg <- edx %>% 
