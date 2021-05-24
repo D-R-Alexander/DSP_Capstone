@@ -1,0 +1,26 @@
+---
+title: "MovieLens Report"
+author: "Daniel Alexander"
+date: "5/17/2021"
+output: 
+  html_document:
+    number_sections: TRUE
+---
+
+# Introduction/Overview/Executive Summary
+Section describes the dataset, summarizes the goal of the project, and includes key steps that were performed.
+
+The goal of the the HarvardX PH125.9x Data Science Capstone Project is to create a movie recommendation system by training a machine learning algorithm using the MovieLens dataset. The dataset consists of 10 million ratings and 100,000 tag applications applied to 10,000 movies by 72,000 users. It can be found at: https://grouplens.org/datasets/movielens/.
+
+The overall primary task is to train a machine learning algorithm using the inputs in one subset to predict movie ratings in the validation set.   
+
+
+# Methods/Analysis 
+Section explains the process and techniques used, including data cleaning, data exploration and visualization, insights gained, and modeling approach
+
+# Results 
+Section presents the modeling results and discusses the model performance
+
+# Conclusion 
+Section gives a brief summary of the report, its limitations and future work
+
